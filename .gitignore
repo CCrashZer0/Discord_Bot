@@ -1,1 +1,4 @@
 config/config.json
+meetings_backup.txt
+test.py
+archive/*

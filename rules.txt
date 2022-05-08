@@ -1,2 +1,5 @@
-:one: Don't be a dick.
-:two: Refer to rule one.
+:one: Be respectful, civil, and welcoming.
+:two: No inappropriate or unsafe content.
+:three: Discriminatory language and hate speech is forbidden.
+:four: Controversial topics such as religion or politics are not allowed
+:five: Be professional
