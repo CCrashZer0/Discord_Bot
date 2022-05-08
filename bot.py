@@ -1,6 +1,6 @@
-from ast import alias
 import json
 import discord
+from ast import alias
 from discord.ext import commands
 
 with open('./config/config.json') as config:
@@ -15,6 +15,16 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
+
+@client.command(aliases=['cmd',])
+async def help_menu(ctx):
+    cmds = ['!rules: Will provied you with a list of the channels rules. Example !rules 1 will give you the first rule.',
+                '!delete: Will delete the previouse message, if you provide a number it will delete that many messages. Exampel !delete 3',
+                '!meet: Provides you with a list of all the local meetings.'
+                ]
+    for c in cmds:
+        await ctx.send(c)
+
 
 @client.command(aliases=['rules'])
 async def rule(ctx, *, number):
